@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cj7-On-3HG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,52 +9,111 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="bmy-zW-Xgl">
+            <objects>
+                <viewController id="BgH-V8-hfR" customClass="ViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXM-sl-Tqi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="EhA-VZ-m6O">
+                                <rect key="frame" x="50" y="138" width="314" height="674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW7-tx-93y">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="167.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Press to Download Image"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="cEj-lI-xSG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PH-md-Bi2">
+                                        <rect key="frame" x="0.0" y="253.5" width="314" height="167"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="GET"/>
+                                        <connections>
+                                            <action selector="getRequest:" destination="BgH-V8-hfR" eventType="touchUpInside" id="P9d-wE-CC0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-LF-ovM">
+                                        <rect key="frame" x="0.0" y="506.5" width="314" height="167.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="POST"/>
+                                        <connections>
+                                            <action selector="postRequest:" destination="BgH-V8-hfR" eventType="touchUpInside" id="9Vr-2h-jdQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7UZ-7l-7in"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7UZ-7l-7in" firstAttribute="bottom" secondItem="EhA-VZ-m6O" secondAttribute="bottom" constant="50" id="2Cd-Lc-6oY"/>
+                            <constraint firstItem="EhA-VZ-m6O" firstAttribute="leading" secondItem="7UZ-7l-7in" secondAttribute="leading" constant="50" id="Ebh-QH-Nql"/>
+                            <constraint firstItem="EhA-VZ-m6O" firstAttribute="top" secondItem="7UZ-7l-7in" secondAttribute="top" constant="50" id="N9V-AG-lwl"/>
+                            <constraint firstItem="7UZ-7l-7in" firstAttribute="trailing" secondItem="EhA-VZ-m6O" secondAttribute="trailing" constant="50" id="ZVc-Qd-MaZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7VJ-mJ-XN0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ch8-E4-BiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="78.348214285714278"/>
+        </scene>
+        <!--Image View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ImageViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zKI-oc-mTU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="414"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="zKI-oc-mTU" secondAttribute="height" multiplier="1:1" id="dIe-PW-rpS"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-m8-hVc">
-                                <rect key="frame" x="173.5" y="556" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="getImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="657-aS-UbG"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-CF-0nz">
-                                <rect key="frame" x="197" y="241" width="20" height="20"/>
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="H9n-CF-0nz" firstAttribute="centerY" secondItem="zKI-oc-mTU" secondAttribute="centerY" id="9QF-5v-z20"/>
-                            <constraint firstItem="zKI-oc-mTU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RR7-PQ-Zje"/>
-                            <constraint firstItem="zKI-oc-mTU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fe3-hx-gmL"/>
-                            <constraint firstItem="zKI-oc-mTU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBm-2Q-hhr"/>
-                            <constraint firstItem="zKI-oc-mTU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oWW-ei-Y7i"/>
-                            <constraint firstItem="H9n-CF-0nz" firstAttribute="centerX" secondItem="zKI-oc-mTU" secondAttribute="centerX" id="pNg-vA-NwX"/>
-                            <constraint firstItem="kOT-m8-hVc" firstAttribute="top" secondItem="zKI-oc-mTU" secondAttribute="bottom" constant="98" id="r6f-8q-CGQ"/>
-                            <constraint firstItem="kOT-m8-hVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u4M-Tv-EqB"/>
+                            <constraint firstItem="zKI-oc-mTU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cyy-eu-E43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zKI-oc-mTU" secondAttribute="bottom" id="GI2-bE-anq"/>
+                            <constraint firstItem="zKI-oc-mTU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdE-YL-6DG"/>
+                            <constraint firstItem="H9n-CF-0nz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeY-F5-fh2"/>
+                            <constraint firstItem="zKI-oc-mTU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rsj-BD-qJW"/>
+                            <constraint firstItem="H9n-CF-0nz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sHz-nF-wJN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="173-0K-S9D"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="H9n-CF-0nz" id="C5x-XL-LvR"/>
-                        <outlet property="imageView" destination="zKI-oc-mTU" id="37T-me-gVH"/>
+                        <outlet property="activityIndicator" destination="H9n-CF-0nz" id="nFT-A4-hn2"/>
+                        <outlet property="imageView" destination="zKI-oc-mTU" id="azr-yH-s6s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="921.73913043478262" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YEE-aZ-s17">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cj7-On-3HG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QcT-l9-CLy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BgH-V8-hfR" kind="relationship" relationship="rootViewController" id="pJm-oj-Zqp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDp-wu-Ifd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820.28985507246387" y="78.348214285714278"/>
         </scene>
     </scenes>
     <resources>
