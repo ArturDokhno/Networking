@@ -14,6 +14,9 @@
 		756CD16E280BE8F6002874CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756CD16D280BE8F6002874CB /* Assets.xcassets */; };
 		756CD171280BE8F6002874CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756CD16F280BE8F6002874CB /* LaunchScreen.storyboard */; };
 		75DEEE672891272A00852EF3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE662891272A00852EF3 /* ImageViewController.swift */; };
+		75DEEE6928914E7300852EF3 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6828914E7200852EF3 /* CoursesViewController.swift */; };
+		75DEEE6B28914F4100852EF3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6A28914F4100852EF3 /* TableViewCell.swift */; };
+		75DEEE6D28914F6100852EF3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6C28914F6100852EF3 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		756CD170280BE8F6002874CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		756CD172280BE8F6002874CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DEEE662891272A00852EF3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		75DEEE6828914E7200852EF3 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		75DEEE6A28914F4100852EF3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		75DEEE6C28914F6100852EF3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				756CD166280BE8F4002874CB /* SceneDelegate.swift */,
 				756CD168280BE8F4002874CB /* ViewController.swift */,
 				75DEEE662891272A00852EF3 /* ImageViewController.swift */,
+				75DEEE6828914E7200852EF3 /* CoursesViewController.swift */,
+				75DEEE6A28914F4100852EF3 /* TableViewCell.swift */,
+				75DEEE6C28914F6100852EF3 /* WebViewController.swift */,
 				756CD16A280BE8F4002874CB /* Main.storyboard */,
 				756CD16D280BE8F6002874CB /* Assets.xcassets */,
 				756CD16F280BE8F6002874CB /* LaunchScreen.storyboard */,
@@ -145,6 +154,9 @@
 				756CD165280BE8F4002874CB /* AppDelegate.swift in Sources */,
 				75DEEE672891272A00852EF3 /* ImageViewController.swift in Sources */,
 				756CD167280BE8F4002874CB /* SceneDelegate.swift in Sources */,
+				75DEEE6D28914F6100852EF3 /* WebViewController.swift in Sources */,
+				75DEEE6B28914F4100852EF3 /* TableViewCell.swift in Sources */,
+				75DEEE6928914E7300852EF3 /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
