@@ -13,4 +13,5 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var courseNameLabel: UILabel!
     @IBOutlet var numberOfLabel: UILabel!
     @IBOutlet var numberOfTests: UILabel!
+    
 }
