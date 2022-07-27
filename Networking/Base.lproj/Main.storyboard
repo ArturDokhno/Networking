@@ -85,7 +85,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JoA-mN-dRy">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JoA-mN-dRy">
                                             <rect key="frame" x="12" y="12" width="96" height="96"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="JoA-mN-dRy" secondAttribute="height" multiplier="1:1" id="D5K-Z4-5dH"/>
@@ -142,7 +142,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="U0s-Oc-YOV"/>
                     <connections>
-                        <segue destination="6Bu-g5-Trn" kind="show" id="ocH-rf-kzD"/>
+                        <segue destination="6Bu-g5-Trn" kind="show" identifier="Description" id="ocH-rf-kzD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hm4-1s-fN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
