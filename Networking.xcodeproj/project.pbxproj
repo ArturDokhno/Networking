@@ -17,6 +17,8 @@
 		75DEEE6928914E7300852EF3 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6828914E7200852EF3 /* CoursesViewController.swift */; };
 		75DEEE6B28914F4100852EF3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6A28914F4100852EF3 /* TableViewCell.swift */; };
 		75DEEE6D28914F6100852EF3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEEE6C28914F6100852EF3 /* WebViewController.swift */; };
+		75F946EC28915E0900337CF9 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F946EB28915E0900337CF9 /* Course.swift */; };
+		75F946EE289162B700337CF9 /* WebsiteDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F946ED289162B700337CF9 /* WebsiteDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		75DEEE6828914E7200852EF3 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		75DEEE6A28914F4100852EF3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		75DEEE6C28914F6100852EF3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		75F946EB28915E0900337CF9 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		75F946ED289162B700337CF9 /* WebsiteDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			children = (
 				756CD164280BE8F4002874CB /* AppDelegate.swift */,
 				756CD166280BE8F4002874CB /* SceneDelegate.swift */,
+				75F946EB28915E0900337CF9 /* Course.swift */,
+				75F946ED289162B700337CF9 /* WebsiteDescription.swift */,
 				756CD168280BE8F4002874CB /* ViewController.swift */,
 				75DEEE662891272A00852EF3 /* ImageViewController.swift */,
 				75DEEE6828914E7200852EF3 /* CoursesViewController.swift */,
@@ -150,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F946EE289162B700337CF9 /* WebsiteDescription.swift in Sources */,
+				75F946EC28915E0900337CF9 /* Course.swift in Sources */,
 				756CD169280BE8F4002874CB /* ViewController.swift in Sources */,
 				756CD165280BE8F4002874CB /* AppDelegate.swift in Sources */,
 				75DEEE672891272A00852EF3 /* ImageViewController.swift in Sources */,
