@@ -11,7 +11,7 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet var courseImage: UIImageView!
     @IBOutlet var courseNameLabel: UILabel!
-    @IBOutlet var numberOfLabel: UILabel!
+    @IBOutlet var numberOfLessons: UILabel!
     @IBOutlet var numberOfTests: UILabel!
     
 }
